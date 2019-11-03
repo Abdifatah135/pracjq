@@ -1,7 +1,7 @@
 $(document).ready(function() {
-  $('.para001').hide();
-    $('.para002').hide();
-    $('.para003').hide();
+  $(".para001").hide();
+  $(".para002").hide();
+  $(".para003").hide();
 
   $(".image001").click(function() {
     $(".image001").hide(1200);
@@ -35,6 +35,29 @@ $(document).ready(function() {
     $(".image003").show(1200);
   });
 });
+$(document).ready(function() {
+  $(".road").hide();
+  $(".croseover").hover(function() {
+    $(this)
+      .find(".road")
+      .toggle(400);
+  });
+  $("#contactUs").submit(function(event) {
+    var myName = $("#name").val();
+    var myEmail = $("#email").val();
+    var comment = $("#textarea").val();
 
-
-              
+    if (myName === "" || myEmail === "" || comment === "") {
+      alert("Please fill in the required data");
+    } else {
+      alert(
+        myName +
+          " ,we have received your message.Thank you for reaching out to us."
+      );
+    }
+    event.preventDefault();
+    $("#name").val("");
+    $("#email").val("");
+    $("#textarea").val("");
+  });
+});

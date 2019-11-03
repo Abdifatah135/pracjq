@@ -38,3 +38,26 @@ h2 {
 figcaption {
   font-weight: bolder;
 }
+.contact {
+  background-image: url("/images/c_image.jpg");
+  background-repeat: no-repeat;
+  height: 50vh;
+  width: 200vh;
+  margin-top: 20px;
+  padding-top: 20px;
+  color: white;
+  text-align: center;
+}
+.socio{
+  display: block;
+  margin-top: 30px;
+  text-align: center;
+  
+}
+footer{
+  text-align: center;
+  margin-top: 50px;
+}
+#info{
+  padding-bottom: 20px;
+}
